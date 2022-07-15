@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <img class="logo-img" src="./images/logo.svg" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"><img id="menu" onclick="changeImage3()" src="./images/icon-menu.svg" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" onclick="changeImage1()" id="navbarDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
+              Features <img id="arrow1"   src="./images/icon-arrow-down.svg" alt="">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-calendar.svg" alt=""> Calender</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-reminders.svg" alt=""> Remainder</a></li>
+              <li><a class="dropdown-item" href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" onclick="changeImage2()"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company <img  id="arrow2"  src="./images/icon-arrow-down.svg"  alt="">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"> History</a></li>
+              <li><a class="dropdown-item" href="#"> Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link col-sm-12" id="login" href="#">login</a>
+            </li>
+            <li>
+              <button class="Register" id="Register">Register</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class = "col-lg-6 " id="heading-section">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <button class="learn-more">Learn more</button><br>
+      <section id="images-section">
+        <img class="client-image" src="./images/client-audiophile.svg" alt="">
+        <img class="client-image" src="./images/client-databiz.svg" alt="">
+        <img class="client-image" src="./images/client-meet.svg" alt="">
+        <img class="client-image" src="./images/client-maker.svg" alt="">
+      </section>
+    </div>
+    <div class = "col-lg-6 ">
+      <img class = "hero" id="main-img" src="./images/image-hero-desktop.png" alt="hero.jpg" >
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Naveen6677">@Naveen kumar reddy</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
